@@ -1,6 +1,5 @@
 
-# HƯỚNG DẪN SỬ DỤNG 
-
+# Cái này bị lỗi, dùng cái main thôi
 Gói `six` là một gói ROS Noetic được thiết kế để mô phỏng robot trong Gazebo, lập bản đồ bằng Gmapping, điều hướng bằng Move Base, và tự động khám phá bằng Explore Lite. Tài liệu này hướng dẫn cách thiết lập, chạy, và khắc phục lỗi hệ thống, bao gồm các tệp launch, bản đồ Gazebo, và cấu hình.
 ## Mô hình URDF: 
 = Chỉ có 4 bánh, tất cả các chi tiết còn lại đã chuyển thành Base_link
