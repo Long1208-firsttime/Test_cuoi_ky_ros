@@ -1,5 +1,5 @@
 
-# Hướng Dẫn Sử Dụng Gói ROS `six`
+# Test Bai Cuoi Ky `six`
 
 Gói `six` là một gói ROS Noetic được thiết kế để mô phỏng robot trong Gazebo, lập bản đồ bằng Gmapping, điều hướng bằng Move Base, và tự động khám phá bằng Explore Lite. Tài liệu này hướng dẫn cách thiết lập, chạy, và khắc phục lỗi hệ thống, bao gồm các tệp launch, bản đồ Gazebo, và cấu hình.
 
@@ -22,11 +22,12 @@ six/
 │   ├── global_costmap_params.yaml
 │   └── base_local_planner_params.yaml
 ├── launch/
-│   ├── display.launch
-│   ├── robot.launch
-│   ├── gmapping.launch
-│   ├── move_base.launch
-│   ├── explore.launch
+│   ├── display.launch (file mac dinh + them thuoc tinh)
+    ├── gazebo.launch (file mac dinh)
+│   ├── robot.launch (cung nhu file mac dinh, dang loi)
+│   ├── gmapping.launch (GMAP)
+│   ├── move_base.launch (dieu huong bang 2d nabgoal)
+│   ├── explore.launch ( dang loi)
 │   ├── testmap.launch (đang lỗi)
 │   └── all_in_one.launch (đang lỗi)
 ├── urdf/
@@ -40,7 +41,7 @@ six/
 └── package.xml
 ```
 
-## Các Thành Phần Chính
+## Các Thành Phần Chính (GPT viet, luoi xoa)
 1. **robot.launch**:
    - Khởi động Gazebo với bản đồ (mặc định: `empty_world`).
    - Sinh robot từ `six.urdf`.
@@ -67,7 +68,7 @@ six/
 
 
 ## Chạy Hệ Thống
-1. **Khởi động mô phỏng**:
+1. **Khởi động mô phỏng**: (File cua t test, cu chay mac dinh gazebo.launch cung duoc)
    ```bash
    roslaunch six robot.launch
    ```
@@ -80,11 +81,11 @@ six/
    ```
    - Lập bản đồ từ dữ liệu LIDAR.
 
-3. **Chạy Move Base**:
+3. **Chạy Move Base**: (cai duoi loi nen cai nay cung khong can thiet lam) 
    ```bash
    roslaunch six move_base.launch
    ```
-   - Điều hướng robot.
+   - Điều hướng robot. 
 
 4. **Chạy Explore Lite**:
    ```bash
@@ -93,7 +94,7 @@ six/
    - Robot tự động khám phá và mở rộng bản đồ.
 
 
-5. **Hiển thị trong RViz**:
+5. **Hiển thị trong RViz**: (mo len sau cung)
  ```bash
    roslaunch six display.launch
    ```
