@@ -27,7 +27,7 @@ six/
     ├── gazebo.launch (file mac dinh)
 │   ├── robot.launch (cung nhu file mac dinh, dang loi)
 │   ├── gmapping.launch (GMAP)
-│   ├── move_base.launch (dieu huong bang 2d nabgoal)
+│   ├── move_base.launch (navigation)(dieu huong bang 2d nabgoal)
 │   ├── explore.launch ( dang loi)
 │   ├── testmap.launch (đang lỗi)
 │   └── all_in_one.launch (đang lỗi)
