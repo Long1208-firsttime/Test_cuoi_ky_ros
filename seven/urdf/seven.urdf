@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="seven">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0090364701647061 -3.98188088988413E-06 0.0155812579426484"
+        rpy="0 0 0" />
+      <mass
+        value="22.8088620947384" />
+      <inertia
+        ixx="0.327676919372414"
+        ixy="0.00101091075582643"
+        ixz="-0.0122992399301582"
+        iyy="0.860034084387453"
+        iyz="-0.000591235146193935"
+        izz="1.0455106513372" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://seven/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="l">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://seven/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_rb">
+    <inertial>
+      <origin
+        xyz="-9.13003006530744E-12 0.0299996587490909 -1.5227649002858E-11"
+        rpy="0 0 0" />
+      <mass
+        value="1.48261250288933" />
+      <inertia
+        ixx="0.00378178590529205"
+        ixy="6.9590228825428E-13"
+        ixz="6.71509664005912E-13"
+        iyy="0.00676196225634647"
+        iyz="2.18859676659095E-12"
+        izz="0.00378178590557582" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://seven/meshes/link_rb.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://seven/meshes/link_rb.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_rb"
+    type="continuous">
+    <origin
+      xyz="-0.27068 -0.23996 -0.025002"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_rb" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link_lb">
+    <inertial>
+      <origin
+        xyz="7.51043671698426E-12 -0.0299996587490848 1.52953205656559E-11"
+        rpy="0 0 0" />
+      <mass
+        value="1.4826125028972" />
+      <inertia
+        ixx="0.00378178590482591"
+        ixy="7.8126806341392E-13"
+        ixz="3.26618714590892E-13"
+        iyy="0.00676196225644493"
+        iyz="1.8162723072729E-12"
+        izz="0.00378178590602968" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://seven/meshes/link_lb.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://seven/meshes/link_lb.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_lb"
+    type="continuous">
+    <origin
+      xyz="-0.27068 0.24004 -0.025002"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_lb" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link_rf">
+    <inertial>
+      <origin
+        xyz="1.73352998622534E-11 0.0299996587491544 2.24118640312909E-12"
+        rpy="0 0 0" />
+      <mass
+        value="1.4826125028907" />
+      <inertia
+        ixx="0.003781785906135"
+        ixy="-2.2442618944636E-12"
+        ixz="-9.19797452820909E-14"
+        iyy="0.00676196225633982"
+        iyz="-5.63993558335591E-13"
+        izz="0.00378178590469724" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://seven/meshes/link_rf.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://seven/meshes/link_rf.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_rf"
+    type="continuous">
+    <origin
+      xyz="0.233319504963329 -0.23996043409085 -0.0250018002769645"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_rf" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link_lf">
+    <inertial>
+      <origin
+        xyz="7.10703718098671E-12 -0.029999658749041 1.55933425893817E-11"
+        rpy="0 0 0" />
+      <mass
+        value="1.48261250289728" />
+      <inertia
+        ixx="0.00378178590486045"
+        ixy="7.85414046395546E-13"
+        ixz="3.12051937726312E-13"
+        iyy="0.00676196225646206"
+        iyz="1.72555136231926E-12"
+        izz="0.00378178590601772" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://seven/meshes/link_lf.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://seven/meshes/link_lf.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_lf"
+    type="continuous">
+    <origin
+      xyz="0.23332 0.24004 -0.025002"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_lf" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+</robot>
