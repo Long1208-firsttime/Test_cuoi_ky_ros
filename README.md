@@ -1,8 +1,9 @@
 
-# Test Bai Cuoi Ky `six`
+# HƯỚNG DẪN SỬ DỤNG
 
 Gói `six` là một gói ROS Noetic được thiết kế để mô phỏng robot trong Gazebo, lập bản đồ bằng Gmapping, điều hướng bằng Move Base, và tự động khám phá bằng Explore Lite. Tài liệu này hướng dẫn cách thiết lập, chạy, và khắc phục lỗi hệ thống, bao gồm các tệp launch, bản đồ Gazebo, và cấu hình.
-
+## Mô hình URDF: 
+= Chỉ có 4 bánh, tất cả các chi tiết còn lại đã chuyển thành Base_link
 ## Yêu Cầu
 - **Hệ điều hành**: Ubuntu 20.04
 - **ROS**: Noetic
@@ -81,13 +82,13 @@ six/
    ```
    - Lập bản đồ từ dữ liệu LIDAR.
 
-3. **Chạy Move Base**: (cai duoi loi nen cai nay cung khong can thiet lam) 
+3. **Chạy Move Base**: (kéo thả cái 2d nabgoal trong rviz thì con xe tự di chuyển tránh vật cản thì phải, hoặc là của cái gmapping)
    ```bash
    roslaunch six move_base.launch
    ```
    - Điều hướng robot. 
 
-4. **Chạy Explore Lite**:
+4. **Chạy Explore Lite**: (đang lỗi không di chuyển)
    ```bash
    roslaunch six explore.launch
    ```
